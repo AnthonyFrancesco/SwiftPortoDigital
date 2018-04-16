@@ -1,0 +1,26 @@
+var arrayExplicito : [String] = ["a", "b", "c", "d", "e"]
+
+print(arrayExplicito.first)
+print(arrayExplicito.last)
+
+
+arrayExplicito[3] = "d2"
+print(arrayExplicito[3])
+
+print(arrayExplicito.count)
+arrayExplicito.remove(at: arrayExplicito.count-2)
+print(arrayExplicito)
+
+print(arrayExplicito.count)
+
+arrayExplicito.insert("b2" , at: 1)
+print(arrayExplicito[1])
+
+
+if (arrayExplicito.contains("b") == true){
+    print ("Tem")
+}else{
+    print("não tem")
+}
+
+print(arrayExplicito.index(of: "b"))
